@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Priyanka Resume</title>
+	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/mail.css' rel='stylesheet'>
+	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <style>
+		/* Style for the underlined text */
+		.underline-black {
+            border-bottom: 2px solid black;
+			}
+			
+        /* Set the table and its cells to cover the whole page */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Add margin to the whole page */
+        body {
+            margin: 40px; /* Adjust the margin value as needed */
+        }
+
+        /* Container for the heading with colored background */
+        .heading-container {
+            background-color: #cccccc; /* Set the background color for the heading container */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+            table-layout: fixed; /* Prevent cells from resizing based on content */
+            outline: 10px solid white; /* Add thick white outline around the table */
+        }
+
+        /* Set the first column to be 75% wider than the table */
+        col:first-child {
+            width: 75%;
+        }
+
+        /* Set the second column to be 25% wider than the table */
+        col:nth-child(2) {
+            width: 25%;
+        }
+
+        td {
+            height: 33.33%; /* Each cell takes up 1/3 of the table height */
+            box-sizing: border-box; /* Include padding and border in cell size */
+			vertical-align: top;
+			border: 8px solid white;
+		}
+
+        /* Set different background colors for cells in each column */
+        td:nth-child(1) {
+            background-color: white;
+        }
+
+        td:nth-child(2) {
+            background-color: #f0f0f0;
+        }
+		 
+        /* Span styles */
+        p span {
+            display: inline-block;
+            border-bottom: 1px solid #ccc; /* Add a 1px solid line at the bottom of the span */
+            padding-bottom: 5px; /* Add some space between the text and the line */
+        }
+		ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        /* Use flex display for proper alignment */
+        li {
+            display: flex;
+            align-items: baseline; /* Align the bullet with the baseline of the text */
+            margin-bottom: 10px; /* Add some space between list items */
+        }
+
+        /* Add custom bullet style */
+        li::before {
+            content: "•"; /* Custom bullet character, in this case, a solid dot */
+            font-size: 14px; /* Adjust the font size as needed */
+            margin-right: 10px; /* Spacing between bullet and text */
+            color: #000; /* Color of the bullet */
+        }
+		/* Example CSS styling for the contact details div */
+        #contactDetails {
+            display: none; /* Initially hide the contact details div */
+            padding: 20px;
+            border: 1px solid black;
+        }
+		.icon-with-text {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px; /* Add spacing between the icon and text */
+        }
+		/* Set the width of the search input and dropdown to be the same */
+        #searchInput, #multiSelect {
+            width: 200px; /* Adjust the width as needed */
+            box-sizing: border-box;
+        }
+        /* Styling for selected items container */
+        #selectedItems {
+            margin-top: 10px;
+            overflow-y: hidden; /* Disable vertical overflow */
+        }
+        /* Styling for each selected item */
+        .selected-item {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+            display: block; /* Display each item as a block element */
+            border-radius: 5px;
+        }
+        /* Styling for the remove button */
+        .remove-button {
+            cursor: pointer;
+            float: right; /* Float the remove button to the right */
+            margin-left: 10px;
+        }
+		progress {
+            width: 200px; /* Adjust the width of the progress bar */
+            height: 20px; /* Adjust the height of the progress bar */
+            margin-bottom: 10px; /* Add some spacing between progress bars */
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #4CAF50; /* Set the background color of the progress bar */
+        }
+
+        progress::-moz-progress-bar {
+            background-color: #4CAF50; /* Set the background color of the progress bar for Firefox */
+        }
+
+        .progress-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-container">
+        <h1><em><strong>Priyanka Venkatesh</strong></em></h1>
+    </div>
+    <table>
+        <colgroup>
+            <col style="width: 75%;"><!-- Set the first column to be 75% wider than the table -->
+            <col style="width: 25%;"><!-- Set the second column to be 25% wider than the table -->
+        </colgroup>
+        <!-- Inserting an empty table with no rows and columns -->
+        <tr>
+            <td style="text-align:justify">
+			<h2><em><strong><span class="underline-black">Professional summary</span></em></strong></h2>
+			<p>Highly skilled Salesforce Developer with 4 years of experience in designing, developing, and implementing customized Salesforce solutions. Good in Apex, Visualforce, Apex web services(REST), and Lightning web Components. Strong problem-solving abilities and a proven track record of delivering high-quality solutions. Committed to continuously improving processes and staying updated with the latest Salesforce technologies.</p>
+			<p class="underline-black"> </p>
+			<h2><em><strong><span class="underline-black">Work History<span></em></strong></h2>
+			<p><strong>IQVIA - APPLICATION DEVELOPER(SALESFORCE)</Strong>
+			<br>12/2019 - Current</p>
+			<ul>
+			<li>Working as Salesforce admin and developer for IQVIA's product OCE</li>
+			<li>OCE is Salesforce-based App used by Health Care Companies</li>
+			<li>Enhancements & configuration changes as per requirement using deployment tools like GIT and Copado</li>
+			<li>Work on enhancements and customizations</li>
+			<li>Investigating, resolving & escalating issues reported by clients maintaining contracted SLAs</li>
+			<li>Collaboration with teams locally/internationally to provide client satisfaction as result</li>
+			</ul>
+			<ol>
+			<p><strong>As Salesforce Developer:</strong></p>
+			<ul>
+			<li>Developed custom Apex classes and triggers to automate complex business processes, reducing manual efforts and improving data accuracy.</li>
+			<li>Designed and developed Lightning Web Components (LWC) to create dynamic and responsive user interfaces, resulting in improved user experience and increased productivity.</li>
+			<li>Developed Lightning Web Components (LWC) within Salesforce Experience Cloud to extend the platform's capabilities and provide a seamless user interface.</li>
+			<li>Utilized Salesforce Community Builder to design and configure custom pages, layouts, and components for personalized user experiences.</li>
+			<li>Implemented data sharing rules, sharing sets, and community user profiles to control data visibility and ensure appropriate security measures within Salesforce Experience Cloud.</li>
+			<li>Integrated custom authentication mechanisms and Single Sign-On (SSO) solutions to provide a secure and smooth login experience for community users.</li>
+			<li>Integrated external systems with Salesforce using REST API web services, ensuring data synchronization and seamless user experience</li>
+			<li>Worked in Agile development environments, participating in sprint planning, backlog grooming, and daily stand-ups to ensure project success.</li>
+			<li>Led the implementation and adoption of multiple OCE (IQVIA Salesforce app) releases</li>
+			<li>Conducted thorough testing and validation of Salesforce customizations and configurations after each release to identify and address any issues or compatibility concerns</li>
+			<li>Worked closely with stakeholders to prioritize and implement new features and enhancements introduced in each OCE (IQVIA Salesforce app) release, aligning them with business requirements and objectives</li>
+			<li>Designed and executed comprehensive training programs and documentation for end-users to ensure a seamless transition and successful adoption of new features and enhancements</li>
+			<li>Proactively monitored and evaluated the impact of OCE (IQVIA Salesforce app) releases on existing customizations and integrations, identifying areas for improvement and implementing necessary updates or modifications.</li>
+			<li>Collaborated with Salesforce support and product teams to report and resolve any issues or bugs encountered during or after Salesforce OCE releases, ensuring optimal system performance and user experience.</li>
+			</ul>
+			<p><strong>As Administrator:</strong></p>
+			<ul>
+			<li>Managed and maintained the Salesforce platform, including user management, security settings, profiles, and permissions.</li>
+			<li>Created and customized Salesforce reports and dashboards to provide real-time insights to stakeholders.</li>
+			<li>Implemented Salesforce configurations such as custom objects, fields, validation rules, workflows, and Process Building automation to automate and streamline business processes.</li>
+			<li>Created and maintained complex validation rules to ensure data integrity and quality.</li>
+			<li>Developed and optimized workflows to automate standard business processes, reducing manual effort and improving efficiency.</li>
+			</ul>
+			</ol>
+			<p><strong>COGNIZANT TECHNOLOGY SOLUTIONS - ENGINEER TRAINEE </Strong>
+			<br>01/2019 - 11/2019</p>
+			<ul>
+			<li>Worked as Network Engineer, troubleshooting and solving technical issues for clients. Worked on Citrix receiver. Worked on RDP, Putty tool, and servers.</li>
+			</ul>
+			<p class="underline-black"> </p>
+			</td>
+            <td>
+	<div>
+    <h2><em><strong>&nbsp;&nbsp;<span class="underline-black">Contact Information</span></strong></em></h2>
+    <p>
+        <a href="#" id="showLink">Show Contact Details</a>(double click)
+    </p>
+    <div id="contactDetails">
+		
+			<p>
+			<span class="icon-with-text">
+			<i class="gg-mail"></i>
+			priyanka.v850@gmail.com
+			</span></p>
+		
+			<p>
+			<span class="icon-with-text"><i class="gg-phone"></i>
+			91 9902290461
+			</span></p>
+		
+			<p><span class="icon-with-text">
+			<i class="fa fa-home" style="font-size:24px"></i>
+				No.22, Bloomfield Garden Bangalore, India 560064
+			</span></p>
+		
+			<p><span class="icon-with-text">
+			<i class="fa fa-linkedin-square" style="font-size:24px"></i>
+			<a href="https://www.linkedin.com/in/priyanka-venkatesh-806">Priyanka Venkatesh</a>
+			</span></p>
+		
+	</div>
+
+    <script>
+        // JavaScript to handle the click event and toggle visibility of the contact details div
+        const showLink = document.getElementById('showLink');
+        const contactDetails = document.getElementById('contactDetails');
+
+        showLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the link from navigating
+
+            // Toggle visibility of the contact details div
+            if (contactDetails.style.display === 'none') {
+                contactDetails.style.display = 'block';
+            } else {
+                contactDetails.style.display = 'none';
+            }
+        });
+    </script>
+	</div>
+	<div>
+			<h2><em><strong>&nbsp;&nbsp;<span class="underline-black">Skills(Technology and</span> &nbsp;&nbsp;Tools)</span></strong></em></h2><p>note: you can press Ctrl and select the skills which you are looking for.</p>
+    <div class="dropdown-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <div class="dropdown-content">
+            <select id="multiSelect" multiple>
+                <option value="Apex programming">Apex programming</option>
+                <option value="Apex triggers and handlers">Apex triggers and handlers</option>
+                <option value="Apex Controllers">Apex Controllers(intermediate)</option>
+                <option value="Apex Batchable class">Apex Batchable class</option>
+				<option value="Schedulable class">Schedulable class</option>
+                <option value="Visualforce">Visualforce(intermediate)</option>
+                <option value="Apex integration">Apex integration</option>
+                <option value="Lightning web components">Lightning web components</option>
+				<option value="REST API based web services">REST API web service</option>
+				<option value="JSON">JSON</option>
+				<option value="Validation Rules">Validation Rules</option>
+				<option value="Salesforce Dashboards">Salesforce Dashboards</option>
+				<option value="HTML5">HTML5</option>
+				<option value="CSS3">CSS3</option>
+				<option value="Javascript">Javascript</option>
+				<option value="Sharing Rules">Sharing Rules</option>
+				<option value="SOQL">SOQL Queries</option>
+				<option value="GIT">GIT</option>
+				<option value="Copado">Copado</option>
+				<option value="Postman">Postman</option>
+				<option value="VScode">VScode</option>
+				<option value="OOPS">OOPS</option>
+				<option value="Jira">Jira</option>
+				<option value="Confluence">Force.com</option>
+				<option value="Omni channel(intermediate)">Omni channel(Begginer)</option>
+				<option value="Force.com">Force.com</option>
+				<option value="Workbench">Workbench</option>
+				<option value="Digital Experience(intermediate)">Digital Experience(Begginer)</option>
+				<option value="Salesforce Community Cloud">Salesforce Community Cloud</option>
+            </select>
+        </div>
+    </div>
+    <div id="selectedItems"></div>
+
+    <script>
+        // JavaScript for search functionality
+        const searchInput = document.getElementById('searchInput');
+        const multiSelect = document.getElementById('multiSelect');
+        const selectedItemsContainer = document.getElementById('selectedItems');
+        const options = multiSelect.options;
+        const selectedItems = new Set(); // Keep track of selected items
+
+        searchInput.addEventListener('focus', function () {
+            document.querySelector('.dropdown-content').style.display = 'block';
+        });
+
+        multiSelect.addEventListener('mouseleave', function () {
+            document.querySelector('.dropdown-content').style.display = 'none';
+        });
+
+        function updateSelectedItems() {
+            selectedItemsContainer.innerHTML = ''; // Clear previous selected items
+
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].selected) {
+                    const selectedItem = document.createElement('div');
+                    selectedItem.className = 'selected-item';
+                    selectedItem.textContent = options[i].text;
+                    const removeButton = document.createElement('span');
+                    removeButton.className = 'remove-button';
+                    removeButton.textContent = 'Remove';
+                    removeButton.addEventListener('click', function (event) {
+                        options[i].selected = false; // Unselect the option
+                        selectedItems.delete(options[i].value);
+                        updateSelectedItems(); // Update the selected items container
+                        event.stopPropagation();
+                    });
+                    selectedItem.appendChild(removeButton);
+                    selectedItemsContainer.appendChild(selectedItem);
+                    selectedItems.add(options[i].value);
+                }
+            }
+        }
+
+        multiSelect.addEventListener('change', function () {
+            selectedItems.clear(); // Clear previous selected items
+
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].selected) {
+                    selectedItems.add(options[i].value);
+                }
+            }
+
+            updateSelectedItems(); // Update the selected items container
+        });
+
+        selectedItemsContainer.addEventListener('click', function (event) {
+            if (event.target.classList.contains('remove-button')) {
+                const selectedText = event.target.parentNode.textContent.trim();
+                for (let i = 0; i < options.length; i++) {
+                    if (options[i].text === selectedText) {
+                        options[i].selected = false; // Unselect the option
+                        selectedItems.delete(options[i].value);
+                        updateSelectedItems(); // Update the selected items container
+                        break;
+                    }
+                }
+            }
+        });
+
+        searchInput.addEventListener('input', function () {
+            const searchText = searchInput.value.toLowerCase();
+
+            for (let i = 0; i < options.length; i++) {
+                const optionText = options[i].text.toLowerCase();
+                const optionValue = options[i].value;
+
+                if (optionText.includes(searchText)) {
+                    options[i].style.display = 'block';
+                } else {
+                    options[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+	</div>
+	<p class="underline-black"> </p>
+	<div>
+	<h2><em><strong>&nbsp;&nbsp;<span class="underline-black">Education<span></em></strong></h2>
+    <p>
+        <strong>&nbsp;Bachelor of Engineering in Computer &nbsp;Science</strong><br>
+        &nbsp;SVCE, Bengaluru, Karnataka, India<br>
+        &nbsp;Year: 2014-2018<br>
+        &nbsp;Percentage: 60%
+    </p>
+	</div>
+	<p class="underline-black"> </p>
+	<div>
+	<h2><em><strong>&nbsp;&nbsp;<span class="underline-black">Certificates<span></em></strong></h2>
+    <ul>
+        <li>
+           Salesforce Administrator 201
+        </li>
+        <li>
+           Salesforce Platform Developer 1
+        </li>
+		<li>
+           Copado 1
+        </li>
+    </ul>
+	</div>
+	<p class="underline-black"> </p>
+	<h2><em><strong>&nbsp;&nbsp;<span class="underline-black">Languages<span></em></strong></h2>
+    
+    <div class="progress-container">
+        <label for="ielts-score">Overall IELTS Score:</label>
+        <progress id="ielts-score" value="6.5" max="9"></progress>
+        <p>6.5 out of 9.0</p>
+    </div>
+	</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
